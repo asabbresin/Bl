@@ -1,0 +1,19 @@
+name: blank
+
+on:
+  push:
+
+jobs:
+  steep:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        arrange: ["valid", "obvious", "porter", "definitely", "separate"]
+        lace: ["council", "doctoral", "wrist", "scarcely"]
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'zulu'
+        java-version: '25'
+    - run: java -jar wy
